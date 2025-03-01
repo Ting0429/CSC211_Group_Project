@@ -14,6 +14,23 @@ int main(){
   
 }
 //1-calculateLetterGrade:
+string calculateLetterGrade(double weightedAverage){
+if(weightedAverage>=90 && weightedAverage<=100){
+  return "A";
+}else if(weightedAverage>=80 && weightedAverage<=89){
+  return "B";
+}else if(weightedAverage>=75 && weightedAverage<=79){
+  return "C+";
+}else if(weightedAverage>=70 && weightedAverage<=74){
+  return "C";
+}else if(weightedAverage>=60 && weightedAverage<=64){
+  return "D";
+}else if(weightedAverage>=0 && weightedAverage<=59){
+  return "F";
+}else{
+  return "invalid";
+}
+}
 
 //2-findMinQuiz function:
 double findMinQuiz(double quiz1,double quiz2,double quiz3, double quiz4){
