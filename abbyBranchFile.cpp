@@ -46,8 +46,17 @@ double minimumGrade=quiz1;
 }
 //3-findAverageQuizScore function:
 double findAverageQuizScore(double quiz1,double quiz2,double quiz3, double quiz4){
+//removal of lowest  quiz score:
+double minimumGrade=quiz1;
+if(quiz2<minimumGrade)
+    minimumGrade=quiz2;
+  if(quiz3<minimumGrade)
+    minimumGrade=quiz3;
+   if(quiz4<minimumGrade)
+    minimumGrade=quiz4; 
+//average excluding lowest score
 double average;
-double sum=(quiz1+quiz2+quiz3+quiz4);
+double sum=(quiz1+quiz2+quiz3+quiz4)-minimumGrade;
 average=sum/4;
 return average;
 }
