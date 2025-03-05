@@ -1,15 +1,10 @@
 #include <iostream>
 using namespace std;
 
-double findAverageHomeworkScore(double hw1, double hw2, double hw3, double hw4)
-{
-    return((hw1 + hw2 + hw3 + hw4)/4.0);
-}
+double findAverageHomeworkScore(double hw1, double hw2, double hw3, double hw4);
 
-double findAverageLabScore(double lab1, double lab2, double lab3, double lab4, double lab5, double lab6, double lab7, double lab8)
-{
-    return((lab1 + lab2 + lab3 + lab4 + lab5 + lab6 + lab7 + lab8)/8.0);
-}
+double findAverageLabScore(double lab1, double lab2, double lab3, double lab4, double lab5, double lab6, double lab7, double lab8);
+
 //parameters for the functions:
 string calculateLetterGrade(double weightedAverage);
 double findMinQuiz(double quiz1,double quiz2,double quiz3, double quiz4);
@@ -64,4 +59,14 @@ double average;
 double sum=(quiz1+quiz2+quiz3+quiz4)-minimumGrade;
 average=sum/4;
 return average;
+}
+
+double findAverageHomeworkScore(double hw1, double hw2, double hw3, double hw4)
+{
+    return((hw1 + hw2 + hw3 + hw4)/4.0);
+}
+
+double findAverageLabScore(double lab1, double lab2, double lab3, double lab4, double lab5, double lab6, double lab7, double lab8)
+{
+    return((lab1 + lab2 + lab3 + lab4 + lab5 + lab6 + lab7 + lab8)/8.0);
 }
