@@ -8,7 +8,9 @@ class Student
 public:
 	double findAverageHomeworkScore(double hw1, double hw2, double hw3, double hw4);
 	double findAverageLabScore(double lab1, double lab2, double lab3, double lab4, double lab5, double lab6, double lab7, double lab8);
-
+	string calculateLetterGrade(double weightedAverage);
+	double findMinQuiz(double quiz1,double quiz2,double quiz3, double quiz4);
+	double findAverageQuizScore(double quiz1,double quiz2,double quiz3, double quiz4);
 
 private: 
 	//All of the information we got from text file
