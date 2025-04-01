@@ -6,7 +6,7 @@ using namespace std;
 class Student
 {
 public:
-	Student (int);//Enter the line of data the student starts at to initiate.
+	Student (string, int);//Enter the line of data the student starts at to initiate.
 	double findAverageHomeworkScore(double hw1, double hw2, double hw3, double hw4);
 	double findAverageLabScore(double lab1, double lab2, double lab3, double lab4, double lab5, double lab6, double lab7, double lab8);
 	string calculateLetterGrade(double weightedAverage);
