@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_CSC211_Group_Project: phony || .
 
 build CMakeFiles/CSC211_Group_Project.dir/main.cpp.o: CXX_COMPILER__CSC211_Group_Project_unscanned_Debug /Users/lintingwei/CLionProjects/CSC211_Group_Project/main.cpp || cmake_object_order_depends_target_CSC211_Group_Project
   DEP_FILE = CMakeFiles/CSC211_Group_Project.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CSC211_Group_Project.dir
   OBJECT_FILE_DIR = CMakeFiles/CSC211_Group_Project.dir
   TARGET_COMPILE_PDB = CMakeFiles/CSC211_Group_Project.dir/
@@ -66,7 +66,7 @@ build CMakeFiles/CSC211_Group_Project.dir/main.cpp.o: CXX_COMPILER__CSC211_Group
 # Link the executable CSC211_Group_Project
 
 build CSC211_Group_Project: CXX_EXECUTABLE_LINKER__CSC211_Group_Project_Debug CMakeFiles/CSC211_Group_Project.dir/main.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0
   OBJECT_DIR = CMakeFiles/CSC211_Group_Project.dir
   POST_BUILD = :
   PRE_LINK = :
