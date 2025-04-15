@@ -4,11 +4,10 @@
 #include <fstream>
 using namespace std;
 // Ting Wei
-Student :: Student (string file, int line){//Enter the file line of data the student starts at to initiate.
+Student :: Student (string file, int stuNum){//Enter the file line of data the student starts at to initiate.
 //for loop to loop thru unused lines
 //cin while not last line
 
-}
 
 
 //Function "Find Average Homework Score"

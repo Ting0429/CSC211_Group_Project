@@ -3,4 +3,5 @@ project(CSC211_Group_Project)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CSC211_Group_Project main.cpp)
+add_executable(CSC211_Group_Project main.cpp
+        Student.cpp)

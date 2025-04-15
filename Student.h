@@ -19,14 +19,13 @@ private:
 
 	string studentFirstName;
 	string studentLastName;
-	int studentID;
-	int studentAttendance;
-	double avgHomeworkScore;
-	double avgLabScore;
-	double groupWork;
-	double avgQuizScore;
-	double finalExam;
-	double courseAverage;
+	int classPart;
+	int lab1, lab2, lab3, lab4, lab5, lab6, lab7, lab8;
+	int hw1, hw2, hw3, hw4;
+	int quiz1, quiz2, quiz3, quiz4;
+	int groupWork;
+	int midterm;
+	int final;
 
 };
 
