@@ -10,8 +10,43 @@ double findAverageQuizScore(double quiz1,double quiz2,double quiz3, double quiz4
 double findAverageHomeworkScore(double homework1,double homework2,double homework3, double homework4);
 double findAverageLabScore( double lab1,double lab2, double lab3,double lab4, double lab5, double lab6, double lab7, double lab8);
 int main(){
-
+ofstream outFile("gradesOut2.txt");
+  if(!outFile){
+    cout<<"Error: Can't open txt"<<endl;
+    return 1;
+  }
+  //outfiling for all 5 students
+  outFile<<fixed<<setprecision(2);
+  outFile<<s1.studentFirstName<<" "<<s1.studentLastName<<endl
+    <<"Course Average: "<<courseAverage1<<endl
+    <<"Letter Grade: "<<letterGrade1<<endl;
   
+  outFile<<fixed<<setprecision(2);
+  outFile<<s2.studentFirstName<<" "<<s2.studentLastName<<endl
+    <<"Course Average: "<<courseAverage2<<endl
+    <<"Letter Grade: "<<letterGrade2<<endl;
+  
+  outFile<<fixed<<setprecision(2);
+  outFile<<s3.studentFirstName<<" "<<s3.studentLastName<<endl
+    <<"Course Average: "<<courseAverage3<<endl
+    <<"Letter Grade: "<<letterGrade3<<endl;
+  
+  outFile<<fixed<<setprecision(2);
+  outFile<<s4.studentFirstName<<" "<<s4.studentLastName<<endl
+    <<"Course Average: "<<courseAverage4<<endl
+    <<"Letter Grade: "<<letterGrade4<<endl;
+  
+  outFile<<fixed<<setprecision(2);
+  outFile<<s5.studentFirstName<<" "<<s5.studentLastName<<endl
+    <<"Course Average: "<<courseAverage5<<endl
+    <<"Letter Grade: "<<letterGrade5<<endl;
+//summary at the end:
+  cout<<"------------------------------------------------------"<<endl;
+  double classavg=(courseAverage1+courseAverage2+courseAverage3+courseAverage4+courseAverage5)/5.0;
+  outFile<<"Total Number of students: 5"<<endl;
+  outFile<<"Class average: "<<classavg<<endl;
+  outFile.close();
+  cout<<"gradesOu2.out successfully made"<<endl;
 }
 //1-calculateLetterGrade:
 string calculateLetterGrade(double weightedAverage){
