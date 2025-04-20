@@ -1,4 +1,10 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iomanip>
 
+
+#include "Student.h"/
 
 ifstream Student::inFile;
 
