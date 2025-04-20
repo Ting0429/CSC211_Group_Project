@@ -117,43 +117,43 @@ int main()
 //<<Abby's Branch
 //gradesOut2.txt
     
-    ofstream outFile("gradesOut2.txt");
+    ofstream outFile2("gradesOut2.txt");
   if(!outFile){    //ensuring the file can be opened
     cout<<"Error: Can't open txt"<<endl;
     return 1;
   }
   
-  outFile<<fixed<<setprecision(2);    //setting precision 
+  outFile2<<fixed<<setprecision(2);    //setting precision 
   
-  outFile<<s1.studentFirstName<<" "<<s1.studentLastName<<endl    //student1
+  outFile2<<s1.studentFirstName<<" "<<s1.studentLastName<<endl    //student1
     <<"Course Average: "<<courseAverage1<<endl
     <<"Letter Grade: "<<letterGrade1<<endl;
   
 
-  outFile<<s2.studentFirstName<<" "<<s2.studentLastName<<endl    //student2
+  outFile2<<s2.studentFirstName<<" "<<s2.studentLastName<<endl    //student2
     <<"Course Average: "<<courseAverage2<<endl
     <<"Letter Grade: "<<letterGrade2<<endl;
   
  
-  outFile<<s3.studentFirstName<<" "<<s3.studentLastName<<endl    //student3
+  outFile2<<s3.studentFirstName<<" "<<s3.studentLastName<<endl    //student3
     <<"Course Average: "<<courseAverage3<<endl
     <<"Letter Grade: "<<letterGrade3<<endl;
   
 
-  outFile<<s4.studentFirstName<<" "<<s4.studentLastName<<endl    //student4
+  outFile2<<s4.studentFirstName<<" "<<s4.studentLastName<<endl    //student4
     <<"Course Average: "<<courseAverage4<<endl
     <<"Letter Grade: "<<letterGrade4<<endl;
   
 
-  outFile<<s5.studentFirstName<<" "<<s5.studentLastName<<endl    //student5
+  outFile2<<s5.studentFirstName<<" "<<s5.studentLastName<<endl    //student5
     <<"Course Average: "<<courseAverage5<<endl
     <<"Letter Grade: "<<letterGrade5<<endl;
 //summary of amount of student and class  average
   cout<<"------------------------------------------------------"<<endl;
   double classavg=(courseAverage1+courseAverage2+courseAverage3+courseAverage4+courseAverage5)/5.0;
-  outFile<<"Total Number of students: 5"<<endl;
-  outFile<<"Class average: "<<classavg<<endl;
-  outFile.close();
+  outFile2<<"Total Number of students: 5"<<endl;
+  outFile2<<"Class average: "<<classavg<<endl;
+  outFile2.close();
   cout<<"gradesOut2.out successfully made"<<endl;
 
     return 0;
