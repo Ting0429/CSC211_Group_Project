@@ -1,5 +1,3 @@
-#ifndef STUDENT_H
-#define STUDENT_H
 
 #include <string>
 #include <fstream>
@@ -28,4 +26,4 @@ public:
     string calculateLetterGrade(double weightedAverage);
 };
 
-#endif
+
