@@ -15,9 +15,12 @@ Student::Student() {
 
     inFile >> firstName >> lastName >> attendance;
 
-    for (int i = 0; i < 8; i++) inFile >> labs[i];
-    for (int i = 0; i < 4; i++) inFile >> homework[i];
-    for (int i = 0; i < 4; i++) inFile >> quizzes[i];
+    for (int i = 0; i < 8; i++) 
+        inFile >> labs[i];
+    for (int i = 0; i < 4; i++) 
+        inFile >> homework[i];
+    for (int i = 0; i < 4; i++) 
+        inFile >> quizzes[i];
 
     inFile >> groupWork >> midterm >> finalExam;
 }
