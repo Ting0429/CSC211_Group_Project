@@ -30,9 +30,12 @@ public:
 
         inFile >> firstName >> lastName >> attendance;
 
-        for (int i = 0; i < 8; i++) inFile >> labs[i];
-        for (int i = 0; i < 4; i++) inFile >> homework[i];
-        for (int i = 0; i < 4; i++) inFile >> quizzes[i];
+        for (int i = 0; i < 8; i++) 
+            inFile >> labs[i];
+        for (int i = 0; i < 4; i++) 
+            inFile >> homework[i];
+        for (int i = 0; i < 4; i++) 
+            inFile >> quizzes[i];
 
         inFile >> groupWork >> midterm >> finalExam;
     }
@@ -113,3 +116,16 @@ int main() {
                  << "Average of Homework: " << s.findAverageHomeworkScore() << endl
                  << "Final Exam: " << s.finalExam << endl
                  << "Course Average: " << course
+            << "Letter Grade: " << letter << endl
+                 << "--------------------------------------" << endl;
+
+        totalCourseAverage += courseAvg;
+    }
+
+    outFile2 << "Total number of students: " << totalStudents << endl;
+    outFile2 << "Class average: " << (totalCourseAverage / totalStudents) << endl;
+
+    outFile1.close();
+    outFile2.close();
+    return 0;
+}
