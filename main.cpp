@@ -118,7 +118,7 @@ int main()
 //gradesOut2.txt
     
     ofstream outFile2("gradesOut2.txt");
-  if(!outFile){    //ensuring the file can be opened
+  if(!outFile2){    //ensuring the file can be opened
     cout<<"Error: Can't open txt"<<endl;
     return 1;
   }
