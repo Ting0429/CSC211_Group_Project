@@ -18,13 +18,14 @@ string calculateLetterGrade(double weightedAverage);
 double findMinQuiz(double quiz1,double quiz2,double quiz3, double quiz4);
 double findAverageQuizScore(double quiz1,double quiz2,double quiz3, double quiz4);
     int main() {
+        // Create an array of Student objects
         Student s1("/Applications/C++ Projects/211 Project/211 Project/GradesIn.txt",1);
         Student s2("/Applications/C++ Projects/211 Project/211 Project/GradesIn.txt",2);
         Student s3("/Applications/C++ Projects/211 Project/211 Project/GradesIn.txt",3);
         Student s4("/Applications/C++ Projects/211 Project/211 Project/GradesIn.txt",4);
         Student s5("/Applications/C++ Projects/211 Project/211 Project/GradesIn.txt",5);
         Student students[] = {s1, s2, s3, s4, s5};
-
+        // Open output files
         ofstream outFile1("/Applications/C++ Projects/211 Project/211 Project/gradesOut1.txt");
         ofstream outFile2("/Applications/C++ Projects/211 Project/211 Project/gradesOut2.txt");
 
@@ -73,14 +74,14 @@ double findAverageQuizScore(double quiz1,double quiz2,double quiz3, double quiz4
     }
 
 
-
+//calculateWeightedAverage function:
 double calculateWeightedAverage(Student s) {
-    return (s.classPart * 0.10) +
-           (findAverageLabScore(s.lab[0], s.lab[1], s.lab[2], s.lab[3],
-                                s.lab[4], s.lab[5], s.lab[6], s.lab[7]) * 0.15) +
-           (findAverageHomeworkScore(s.hw[0], s.hw[1], s.hw[2], s.hw[3]) * 0.15) +
+    return ((s.classPart * 0.10)*10) +
+           ((findAverageLabScore(s.lab[0], s.lab[1], s.lab[2], s.lab[3],
+                                s.lab[4], s.lab[5], s.lab[6], s.lab[7]) * 0.15)*10) +
+           ((findAverageHomeworkScore(s.hw[0], s.hw[1], s.hw[2], s.hw[3]) * 0.15)*5) +
            (findAverageQuizScore(s.quiz[0], s.quiz[1], s.quiz[2], s.quiz[3]) * 0.15) +
-           (s.groupWork * 0.05) +
+           ((s.groupWork * 0.05)*10) +
            (s.midterm * 0.20) +
            (s.finalGrade * 0.20);
 }
@@ -131,10 +132,15 @@ double findAverageQuizScore(double quiz1,double quiz2,double quiz3, double quiz4
     return average;
 }
 
+//4-findAverageHomeworkScore function:
 double findAverageHomeworkScore(double hw1, double hw2, double hw3, double hw4){
-    return((hw1 + hw2 + hw3 + hw4) / 4.0);
+    //multiply the first two homework scores by 2
+    //get the average of all four scores
+    return(((hw1*2) + (hw2*2) + hw3 + hw4) / 4.0);
 }
 
+//5-findAverageLabScore function:
 double findAverageLabScore(double lab1, double lab2, double lab3, double lab4, double lab5, double lab6, double lab7, double lab8){
+    //average of all eight lab scores
     return((lab1 + lab2 + lab3 + lab4 + lab5 + lab6 + lab7 + lab8) / 8.0);
 }
