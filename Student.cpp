@@ -63,3 +63,4 @@ string Student::calculateLetterGrade(double weightedAverage) {
     else if (weightedAverage >= 60) return "D";
     else return "F";
 }
+};
