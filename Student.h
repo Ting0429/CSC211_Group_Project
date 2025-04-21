@@ -14,9 +14,9 @@ public:
     double groupWork;
     double midterm;
     double finalExam;
-
+//static ifstream reads in from the txt file
     static ifstream inFile;
-
+//constructor
     Student();
 
     double findAverageHomeworkScore();
