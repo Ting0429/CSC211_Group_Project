@@ -4,8 +4,15 @@
 #include "Student.h"
 
 using namespace std;
-
+//defining static ifstream for student class
+ifstream Student::inFile;
 int main() {
+    Student::inFile.open("gradesIn.txt");
+    if (!Student::inFile) {
+        cout << "Error opening input file.\n";
+        return 1;
+    }
+
     //array to hold the Student objects
     Student students[5];
     //creating and opening two output files
