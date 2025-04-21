@@ -23,6 +23,7 @@ int main() {
     int totalStudents = 5;
 
     for (int i = 0; i < totalStudents; i++) {
+        //Student &s is updated with the for loop and creating a reference to students[i]
         Student& s = students[i];
         double courseAvg = s.calculateWeightedAverage();
         string letter = s.calculateLetterGrade(courseAvg);
