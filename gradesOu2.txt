@@ -1,0 +1,22 @@
+John Doe
+Course Average: 57.74
+Letter Grade: F
+--------------------------------------
+Jane Smith
+Course Average: 46.69
+Letter Grade: F
+--------------------------------------
+Alice Johnson
+Course Average: 46.69
+Letter Grade: F
+--------------------------------------
+Bob Brown
+Course Average: 46.69
+Letter Grade: F
+--------------------------------------
+Charlie White
+Course Average: 46.69
+Letter Grade: F
+--------------------------------------
+Total number of students: 5
+Class average: 48.90
