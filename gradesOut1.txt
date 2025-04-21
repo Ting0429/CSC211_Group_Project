@@ -1,0 +1,46 @@
+John Doe
+Attendance: 9.00
+Group Work: 100.00
+Average of Quizzes: 85.00
+Average of Labs: 8.88
+Average of Homework: 7.75
+Final Exam: 95.00
+Course Average: 57.74
+--------------------------------------
+Jane Smith
+Attendance: 9.00
+Group Work: 32.00
+Average of Quizzes: 62.00
+Average of Labs: 8.88
+Average of Homework: 7.75
+Final Exam: 90.00
+Course Average: 46.69
+--------------------------------------
+Alice Johnson
+Attendance: 9.00
+Group Work: 32.00
+Average of Quizzes: 62.00
+Average of Labs: 8.88
+Average of Homework: 7.75
+Final Exam: 90.00
+Course Average: 46.69
+--------------------------------------
+Bob Brown
+Attendance: 9.00
+Group Work: 32.00
+Average of Quizzes: 62.00
+Average of Labs: 8.88
+Average of Homework: 7.75
+Final Exam: 90.00
+Course Average: 46.69
+--------------------------------------
+Charlie White
+Attendance: 9.00
+Group Work: 32.00
+Average of Quizzes: 62.00
+Average of Labs: 8.88
+Average of Homework: 7.75
+Final Exam: 90.00
+Course Average: 46.69
+--------------------------------------
+//this is my ouput file when we ran it
