@@ -9,11 +9,13 @@
 #include <string>
 using namespace std;
 
-class Student//Keep all public in this class bc we want to access all of the variables outside
+class Student//Keep all public in this class 
+//bc we want to access all of the variables outside
 {
 public:
     //All of the information we got from text file
-    //We managed to do this variables, because it's connected to our student
+    //We managed to do this variables
+    //because it's connected to our student
     Student (string, int);//Enter file and student number to initiate.
     string studentFirstName;//first name of student
     string studentLastName;//last name of student
